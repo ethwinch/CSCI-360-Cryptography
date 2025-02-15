@@ -180,9 +180,9 @@ int main(){
 
     //Sorted table array
     vector<char> tableText = {
-        'e', 't', 'a', 'o', 'i', 'n', 's', 'h', 'r', 'd',
-        'l', 'c', 'u', 'm', 'w', 'f', 'g', 'y', 'p', 'b',
-        'v', 'k', 'j', 'x', 'q', 'z'
+        'e', 't', 'a', 'i', 'o', 's', 'h', 'r', 'd',
+        'l', 'c', 'u', 'm', 'n', 'w', 'f', 'g', 'y', 
+        'p', 'x', 'b', 'v', 'k', 'j', 'q', 'z'
     };
 
     cout << "\nSorted table array\n";
