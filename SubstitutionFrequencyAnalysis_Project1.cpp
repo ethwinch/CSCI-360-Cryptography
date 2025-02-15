@@ -22,7 +22,7 @@ bool compareFrequency(const pair<char, double>& a, const pair<char, double>& b){
     return a.second > b.second;
 }
 
-string decText(const string& text, const vector<char>& subArray){
+string decText(const string& text){
     map<char, int> letterCounts;
     int totalLetters = 0;
     
@@ -52,7 +52,7 @@ string decText(const string& text, const vector<char>& subArray){
     // Sort the frequencies in descending order
     sort(frequencies.begin(), frequencies.end(), compareFrequency);
 
-        // sort English letter frequencies from smallest to largest using compareFrequency function
+    // sort English letter frequencies from smallest to largest using compareFrequency function
     sort(englishF.begin(), englishF.end(), compareFrequency);
     
     
@@ -178,21 +178,9 @@ int main(){
     "wkbrusurbmbwjk w jxxru yt bprjuwri wk bpr pjsr bpmb bpr "
     "riirkvr jx jqwkmcmk qmumbr cwhh urymwk wkbmvb ";
 
-    //Sorted table array
-    vector<char> tableText = {
-        'e', 't', 'a', 'i', 'o', 's', 'h', 'r', 'd',
-        'l', 'c', 'u', 'm', 'n', 'w', 'f', 'g', 'y', 
-        'p', 'x', 'b', 'v', 'k', 'j', 'q', 'z'
-    };
-
-    cout << "\nSorted table array\n";
-    for(char c : tableText){
-        cout << c << " ";
-    }
-    cout << endl;
     
     //decrypt the text
-    cout << decText(eText, tableText) << endl;
+    cout << decText(eText) << endl;
 
     return 0;
 }
